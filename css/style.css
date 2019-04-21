@@ -1,0 +1,297 @@
+* {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+
+}
+@keyframes blink { 
+   50% { border-color: #0062cc; } 
+}
+
+.modal-dialog {
+	max-width: 70rem!important;
+}
+
+.animacao{ /*or other element you want*/
+    animation: blink .5s step-end infinite alternate;
+}
+.navbar {
+	padding: 2rem 2rem;
+}
+
+.navbar img {
+	max-width: 8rem;
+	display: inline-block;
+}
+
+.navbar h1 {
+	margin: 0;
+	display: inline-block;
+}
+
+.navbar .botao {
+	flex-direction: row-reverse;
+	display: flex;
+}
+
+.navbar .btg {
+    background: #fcfcfc;
+    border-radius: 6px;
+    text-align: center;
+
+    vertical-align: middle;
+    align-items: center;
+    padding: 1rem 2rem!important;
+    font-weight: 700;
+    line-height: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.navbar .navi {
+	display: inline-block;
+	padding-left: 2rem;
+}
+.navbar .navi a {
+	padding: 0 2rem;
+	font-size: 1rem;
+}
+
+section.form {
+	width: 	100%;
+	min-height: 29rem;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+
+.slick-slide,
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+section.form .formulario {
+    background: rgba(255, 255, 255, 1);
+    padding: 2rem 4rem 3rem 4rem;;
+    float: right;
+    min-width: 27rem;
+    margin-right: 17rem;
+    position: absolute;
+    right: 0rem;
+}
+
+.formulario button {
+	background: #024fee;
+	  border-radius: 6px;
+    text-align: center;
+
+    vertical-align: middle;
+    align-items: center;
+    padding: 1rem 2rem!important;
+    font-weight: 700;
+    line-height: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.btn-ac {
+	background: #848ea2;
+	border-color: #848ea2;
+	  border-radius: 6px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    align-items: center;
+    padding: 1rem 2rem!important;
+    font-weight: 700;
+    line-height: 15px;
+    text-decoration: none!important;
+    font-size: 1rem;
+
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.formulario label {
+	color: #007bff;
+}
+
+.form-group {
+	margin-bottom: 2rem;
+}
+
+section.slider {
+		width: 	100%;
+	min-height: 29rem;
+
+}
+
+.slider .item {
+	width: 100%;
+    min-height: 25rem;
+    display: block;
+    background-size: cover!important;
+
+}
+
+h2 {
+	color: #007bff;
+	padding-top: 2rem;
+
+}
+h2:after
+{
+    content: ' ';
+    display: block;
+    border: 2px solid #007bff;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 8rem;
+    position: relative;
+    left:.2rem;
+}
+
+h3 {
+	color: #007bff;
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+	font-weight: 900;
+	
+}
+
+.text-muted {
+    color: #000!important;
+
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
+	
+}
+
+.content .row {
+	margin-top: 0rem;
+}
+
+.content .row img {
+	margin-top: -2rem;
+}
+
+
+
+
+footer {
+	background:#024fee;
+	padding: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+
+}
+
+footer img {
+	max-width: 6rem;
+}
+
+@media screen and (max-width: 1590px) {
+.formulario {
+	    margin-right: 4rem!important;
+}
+
+}	
+
+@media screen and (min-width: 991px) {
+		.navbar {
+			position: fixed;
+			width: 100%;
+			top:0;
+			left:0;
+			z-index: 2;
+			background:#fff;
+		}
+
+		section.form {
+		margin-top: 100px;
+		}
+
+
+
+
+}	
+
+@media screen and (max-width: 990px) {
+	.content .container {
+			padding:0 2rem!important;
+		}
+	h2 {
+		padding-top: 2rem;
+	}
+	.slider .item {
+			min-height: 26rem!important;
+		}
+
+	.formulario {
+		padding: 2rem!important;
+		min-width: 1rem!important;
+		    background: rgba(255, 255, 255, 0.90);
+	}
+  .content .row img {
+  	margin-top: 0!important;
+  }
+
+  .btn {
+  	width: 100%!important;
+  }
+
+  section.form .formulario {
+  	margin-right: 0px!important;
+  }
+
+  section.form {
+  	    max-height: 25rem;
+  	    min-height: 25rem;
+  }
+
+  section.slider {
+  	max-height: 25rem;
+  	min-height: 25rem;
+  }
+
+  .navbar .navi {
+  	display: none;
+  }
+
+  .navbar .navi a {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+}
+
+p,.text-muted {
+	color: grey!important;
+}
